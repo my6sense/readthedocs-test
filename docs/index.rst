@@ -2,21 +2,14 @@
 Simple Documentation Doctut
 ===================================
 
-Another Simple Header
-===================================
-
-Here some text explaining some very complex staff.::
-
-   print 'hello'
-   >> hello
-
 Guide
 ^^^^^
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    introduction
+   widgetEdit
    help
 
 

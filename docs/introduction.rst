@@ -10,3 +10,5 @@ Custom Widget
 * Currently only the classic and infeed families supports code customization by the user.
 * To switch to code customization mode, check the “Mark widget as custom” option.
 * General properties such as number of items in widget and number of paid items are editable as well.
+
+.. image:: ../assets/customWidget.png
