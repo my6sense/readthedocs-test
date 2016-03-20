@@ -8,7 +8,7 @@ General Comments
 * Data is injected to the html via Mustache templating engine. For example: {{data.content.image}} will inject the image url.
 
 Editing Widget Wrapper (widget.html)
-------------------------------------
+====================================
 In the *widget.html* file, you can edit the HTML base of the widget, containing the frame and the basic HTML code.
 Widget Wrapper structure.::
 
@@ -18,7 +18,7 @@ Widget Wrapper structure.::
     </div>
 
 API
-++++
+----
 
 Mandatory
 ++++++++++
@@ -33,7 +33,7 @@ Optional
 #. Title element.
 
 Editing Items Templates (items.html)
-------------------------------------
+====================================
 
 The UI templates in item.html are used to display each single content recommendation received from the server.
 Each Item is a repeatable template, each widget must have 2 different Item templates defined:
@@ -73,7 +73,7 @@ Mandatory Constraints
 Do **NOT** set an id to Item elements using the HTML “id” attribute.
 
 API
-++++
+----
 
 Mandatory
 ++++++++++
@@ -119,8 +119,17 @@ Optional
 | {{data.content.data.content.alias}}       | The shortened site name to display for the item      |
 +-------------------------------------------+------------------------------------------------------+
 
+Editing Widget Style (widget.css)
+====================================
+widget’s style (both items.html and widget.html) can be customized in widget.css.
+
+Mandatory Constraints
+----------------------
+Placeholders images should be placed behind the real images (using the z-index property)
+
 Reserved HTML Class Names
-++++++++++++++++++++++++++
+=========================
+
 Some of the UI can be configured via the Management Application.
 This configuration capability expects the usage of certain class names for certain elements,
 and might override developer set properties and values, as defined in the table below:
@@ -148,11 +157,3 @@ and might override developer set properties and values, as defined in the table 
 +-----------------+---------------------------------------------+------------+--------------+
 | my6_item        | | Item Element, Mandatory class for Item    |  Yes       | items.html   |
 +-----------------+---------------------------------------------+------------+--------------+
-
-Editing Widget Style (widget.css)
-------------------------------------
-widget’s style (both items.html and widget.html) can be customized in widget.css.
-
-Mandatory Constraints
-++++++++++++++++++++++
-Placeholders images should be placed behind the real images (using the z-index property)
