@@ -22,12 +22,12 @@ API
 
 Mandatory
 ---------
-#. class := my6_list , lets the widget identify this element as a list (Meaning, the element that contains the widget items). A container for the injected items.
-#. data-noscroll := true
+#. *class = my6_list* , lets the widget identify this element as a **list** (Meaning, the element that contains the widget items). A container for the injected items.
+#. *data-noscroll = true*
 
 Optional
 --------
-#. <img  class="my6_logo_img" src=”default image that will be replaced”> -  element with network logo, src will be replaced on runtime.
+#. *<img  class="my6_logo_img" src=”default image that will be replaced”>* -  element with network logo, src will be replaced on runtime.
 #. Title element.
 
 Editing Items Templates (items.html)
