@@ -10,7 +10,6 @@ Guide
 
    introduction
    widgetEdit
-   help
 
 
 Indices and tables
