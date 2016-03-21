@@ -1,16 +1,14 @@
-Widget Customization
-********************
+Customizing the Widget
+**********************
 
-General Comments
-================
-* In the code customization mode the user can edit the widget wrapper element (widget.html), the widget’s item templates (items.html), and their corresponding styles (widget.css)
-* Some of the elements and attributes are mandatory, and should not be changed, and the rest are optional.
-* Data is injected to the html via Mustache templating engine. For example: {{data.content.image}} will inject the image url.
+* In the code customization mode, the user can edit the widget wrapper element (widget.html), the widget’s item templates (items.html), and their corresponding styles (widget.css)
+* Some of the elements and attributes are mandatory and should not be changed, others are optional
+* Data is injected to the html via the Mustache templating engine; for example, {{data.content.image}} will inject the image’s URL.
 
-Editing Widget Wrapper (widget.html)
-====================================
-In the *widget.html* file, you can edit the HTML base of the widget, containing the frame and the basic HTML code.
-Widget Wrapper structure.::
+Editing the Widget Wrapper (widget.html)
+========================================
+In the widget.html file, you can edit the HTML base of the widget, which contains the frame and the basic HTML code.
+The following is the structure of the widget wrapper.::
 
     <div class="my6_wrap" ><span class="my6_title">You may also like</span>
         <div class="my6_list" data-noscroll="true"></div>
@@ -23,13 +21,13 @@ API
 Mandatory
 ++++++++++
 
-#. ``class = my6_list``, lets the widget identify this element as a **list** (Meaning, the element that contains the widget items). A container for the injected items.
+#. ``class = my6_list``, allows the widget to identify this element as a **list** (in other words, the element that contains the widget’s items). It is a container for the injected items.
 #. ``data-noscroll = true``
 
 Optional
 ++++++++++
 
-#. ``<img  class="my6_logo_img" src=”default image that will be replaced”>`` -  element with network logo, src will be replaced on runtime.
+#. ``<img  class="my6_logo_img" src=”default image that will be replaced”>`` - this is an element with a network logo; src will be replaced during runtime.
 #. Title element.
 
 Editing Items Templates (items.html)
